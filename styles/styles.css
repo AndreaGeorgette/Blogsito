@@ -1,0 +1,372 @@
+  .header-encabezado{
+      background-color: rgb(228, 205, 244);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 150PX;
+      padding: 30;
+    
+ }
+ .nav-ul{
+     list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+ }
+ li{
+      display: inline;
+      padding: 50px;
+}
+ h1{
+    margin: 30px;
+    font-style: italic;
+ }
+
+ a:hover {
+   color: blueviolet;
+
+ }
+
+ a {
+   
+    color: black;
+    text-decoration: none;
+ }
+ 
+  main{
+     background-color: beige;
+     margin-top: 30px;
+  }
+ 
+   
+ 
+  .caja1{
+    background-color:beige ;
+    height:315px;
+    width: 1000px ;
+    margin: 50px;
+    justify-content: space-between;
+    position: relative;
+    left: 200px;
+    
+  }
+  .caja2{
+    width:950px ;
+    height: 200px;
+    background-color: rgb(244, 240, 236);
+    border: 2px solid black;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    left: 270px;
+  }
+ 
+ 
+  .suscribirse{
+   display:flex;
+    width: 400px;
+    height: 200px;
+    position: relative;
+    left: 480px;
+    margin: 100px;
+    font-style: initial;
+  }
+
+  button{
+   background-color: rgb(122, 14, 223);
+ }
+  .usuario{
+   display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 57%;
+   top: -300px;
+  }
+  .playlist-titulo{
+   position: relative;
+   left: 850px;
+   top: 100px;
+  }
+  .playlist{
+   width: 100%;
+   height: 350;
+   background-color:rgb(228, 205, 244);
+ }
+ .spotify{
+   position: relative;
+   left: 450px;
+   top: 40px;
+   width: 300px;
+   height: 200px;
+ }
+  .Conocemisvlogs{
+    margin:100px ;
+    position: relative;
+    left: 500px;
+    
+ 
+  }
+ .midia{
+    width:560px ;
+    height: 300px;
+    background-color: rgb(244, 240, 236);
+    border: 2px solid black;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    left: 750px;
+    bottom: 380px;
+ }
+ .misviajes1{
+    display: block;
+    flex-grow: 20px;
+    width:560px ;
+    height: 300px;
+    background-color: rgb(244, 240, 236);
+    border: 2px solid black;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    left: 750px;
+    bottom: 380px;
+ }
+ .familiayamigos1{
+    width:560px ;
+    height: 300px;
+    background-color: rgb(244, 240, 236);
+    border: 2px solid black;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    left: 750px;
+    bottom: 380px;
+    
+ }
+ 
+ .redes{
+   display: flex;
+   flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    left: 80px;
+    top: 30px;
+ }
+ .botondefooter{
+    position: relative;
+    left: 70%;
+ }
+ .usuariofooter{
+   position: relative;
+  left: 88%;
+  top: -30px;
+ }
+ footer{
+
+    background-color: rgb(228, 205, 244);
+    height: 190px;
+ }
+ 
+ .maintips{
+ display: grid;
+grid-template-columns: 5fr 3fr  ;
+ grid-template-rows: repeat(4,3fr );
+grid-template-areas:
+ "cajaensalada1" "cajaensalada2"
+
+ ;
+ }
+ 
+ .CajaEnsalada1{
+   
+    grid-area: cajaensalada1;
+
+ }
+ .CajaEnsalada2{
+   
+    grid-area: cajaensalada2;
+    background-color: rgb(244, 240, 236);
+    border: 2px solid black;
+    text-align: center;
+   
+ }
+ .maquillaje1{
+   
+   grid-area: maquillaje1;
+ }
+ .maquillaje2{
+  
+    grid-area: maquillaje2;
+    background-color: rgb(244, 240, 236);
+    border: 2px solid black;
+    text-align: center;
+ }
+ .skincare1{
+  
+   grid-area: skincare2;
+ }
+ .skincare2{
+   
+    grid-area: eskincare2;
+    background-color: rgb(244, 240, 236);
+    border: 2px solid black;
+    text-align: center;
+ }
+
+ .mivlog{
+    width:950px ;
+    height: 600px;
+    background-color: rgb(244, 240, 236);
+    border: 2px solid black;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    bottom: 100px;
+    margin: 200px;
+    left: 100px;
+ }
+
+.vlog-videos{
+   text-align: center;
+   position: relative;
+   bottom: 100px;
+  
+}
+
+.midiaida2{
+   width:560px ;
+    height: 200px;
+    background-color: rgb(244, 240, 236);
+    border: 2px solid black;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    left: 550px;
+    bottom: 280px;
+}
+
+.conocemeimg{
+   display: flex;
+   align-items: end;
+   width:560px ;
+   height: 200px;
+   line-height: 30px;
+   position: relative;
+   left: 85%;
+   bottom: -80px;
+   
+}
+.sobremi{
+   width:550px ;
+    height: 500px;
+    background-color: rgb(244, 240, 236);
+    border: 2px solid rgb(179, 160, 160);
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    bottom: 200px;
+    margin: 30px;
+}
+
+.mi-linea{
+   border: none;
+   background-color: black;
+   width: 100%;
+   height: 2px;
+ 
+}
+.mi-contenido{
+   width:90% ;
+   margin: 30px;
+    height: 200px;
+    background-color: rgb(244, 240, 236);
+    border: 2px solid black;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    
+    
+}
+.curiosidades{
+   width:360px ;
+    height: 200px;
+    background-color: rgb(244, 240, 236);
+    border: 2px solid black;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+   margin: 30px;
+   
+}
+p{
+   margin: 30px;
+   text-align: center;
+}
+.midiadia{
+   margin: 40px;
+}
+.midiadia2{
+   display: block;
+   flex-grow: 20px;
+   width:560px ;
+   height: 300px;
+   background-color: rgb(244, 240, 236);
+   border: 2px solid black;
+   text-align: center;
+   line-height: 30px;
+   position: relative;
+   left: 750px;
+   bottom: 380px;
+}
+.mis-viajes-vlog{
+   position: relative;
+   left: 48%;
+}
+
+.mis-viajes-vlog2{
+
+   display: block;
+   flex-grow: 20px;
+   width:560px ;
+   height: 300px;
+   background-color: rgb(244, 240, 236);
+   border: 2px solid black;
+   text-align: center;
+   line-height: 30px;
+   position: relative;
+   right: -180px;
+   bottom: 350px;
+}
+.familiayamigos-vlog2{
+   display: block;
+   flex-grow: 20px;
+   width:560px ;
+   height: 300px;
+   background-color: rgb(244, 240, 236);
+   border: 2px solid black;
+   text-align: center;
+   line-height: 30px;
+   position: relative;
+   left: 750px;
+   bottom: 380px;
+}
+
+.mudanza-vlog{
+   position: relative;
+   left: 48%;
+}
+
+.mudanza-vlog2{
+   display: block;
+   flex-grow: 20px;
+   width:560px ;
+   height: 300px;
+   background-color: rgb(244, 240, 236);
+   border: 2px solid black;
+   text-align: center;
+   line-height: 30px;
+   position: relative;
+   right: -180px;
+   bottom: 350px;
+}
+
