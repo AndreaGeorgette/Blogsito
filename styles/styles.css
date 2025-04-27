@@ -7,8 +7,8 @@
       justify-content: space-between;
       align-items: center;
       height: 150PX;
-      padding: 30;
-      border: 2px solid rgb(122, 14, 223)
+      padding: 30px;
+      border: 2px solid rgb(122, 14, 223);
     
  }
  .nav-ul{
@@ -45,103 +45,136 @@
    /* pagina de inicio */
  
   .video-bienvenida-inicio{
-    background-color:beige ;
-    margin: 50px;
-    justify-content: space-between;
-    position: relative;
-    left: 200px;
+      display: flex;
+      justify-content: center;
+      background-color:beige ;
+      margin-left: 400px;
+   
+    
     
   }
   .texto-bienvenida-inicio{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 305px;
     width:950px ;
     height: 200px;
     background-color: rgb(244, 240, 236);
-    border: 2px solid black;
-    text-align: center;
+    border: 2px solid rgb(122, 14, 223);
     line-height: 30px;
-    position: relative;
-    left: 270px;
+    
   }
  
  
   .suscribirse-inicio{
     display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40%;
     width: 400px;
     height: 200px;
-    position: relative;
-    left: 480px;
-    margin: 100px;
     font-style: initial;
   }
-
+.usuario-inicio{
+  margin-right: 90px;
+}
   button{
    background-color: rgb(122, 14, 223);
  }
-  .usuario-inicio{
-   display: flex;
-  flex-direction: row;
-  position: relative;
-  left: 57%;
-   top: -300px;
-  }
+  
   .playlist-titulo-inicio{
-   position: relative;
-   left: 850px;
-   top: 100px;
+     display: flex;
+    justify-content: center;
+    align-items: flex-end;
+     margin-top: 80px;
   }
   .playlist-inicio{
    width: 100%;
-   height: 350;
+   height: 350px;
+   border: 2px solid rgb(122, 14, 223);
    background-color:rgb(228, 205, 244);
  }
  .spotify-inicio{
-   position: relative;
-   left: 450px;
-   top: 40px;
-   width: 300px;
-   height: 200px;
+   display: flex;
+   justify-content: center;
+   margin-top: 30px;
+   
  }
   .Conocemisvlogs-inicio{
-    margin:100px ;
-    position: relative;
-    left: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+
+  }
+  .video-midia-inicio{
+    display: flex;
+    justify-content: start;
+    margin-top: 60px;
+    margin-left: 70px;
     
- 
   }
  .midia-inicio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-top: -370px;
+    margin-left: 54%;
+
     width:560px ;
     height: 300px;
     background-color: rgb(244, 240, 236);
-    border: 2px solid black;
-    text-align: center;
+    border: 2px solid rgb(122, 14, 223);
     line-height: 30px;
-    position: relative;
-    left: 750px;
-    bottom: 380px;
+    
+ }
+
+ .video-viajes-inicio{
+   display: flex;
+   justify-content: start;
+   margin-top: 350px;
+   margin-left: 70px;
  }
  .misviajes-inicio{
-    display: block;
-    flex-grow: 20px;
-    width:560px ;
-    height: 300px;
-    background-color: rgb(244, 240, 236);
-    border: 2px solid black;
-    text-align: center;
-    line-height: 30px;
-    position: relative;
-    left: 750px;
-    bottom: 380px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: center;
+   text-align: center;
+   margin-top: -370px;
+   margin-left: 54%;
+
+   width:560px ;
+   height: 300px;
+   background-color: rgb(244, 240, 236);
+   border: 2px solid rgb(122, 14, 223);
+   line-height: 30px;
+ }
+.familia-contenedor-inicio{
+  height: 500px;
+}
+ .video-familia-inicio{
+     display: flex;
+   justify-content: start;
+   margin-top: 350px;
+   margin-left: 70px;
  }
  .familiayamigos-inicio{
-    width:560px ;
-    height: 300px;
-    background-color: rgb(244, 240, 236);
-    border: 2px solid black;
-    text-align: center;
-    line-height: 30px;
-    position: relative;
-    left: 750px;
-    bottom: 380px;
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin-top: -370px;
+  margin-left: 54%;
+  width:560px ;
+  height: 300px;
+  background-color: rgb(244, 240, 236);
+  border: 2px solid rgb(122, 14, 223);
+  line-height: 30px;
     
  }
  
@@ -149,44 +182,57 @@
 
  .conocemeimg{
     display: flex;
-    align-items: end;
-    width:560px ;
-    height: 200px;
-    line-height: 30px;
-    position: relative;
-    left: 85%;
-    bottom: -80px;
+    justify-content: end;
+   
+   
+   margin-right: 30px;
    
 }
+.subtitulo-conoceme{
+    margin-left: 10%;
+    margin-bottom: -40px;
+}
+
  .sobremi-text-conoceme{
-    
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: center;
+   margin-top: -38%;
+   margin-left: 10%;
     width:550px ;
     height: 500px;
     background-color: rgb(244, 240, 236);
-    border: 2px solid rgb(179, 160, 160);
+    border: 2px solid rgb(122, 14, 223);
     text-align: center;
     line-height: 30px;
-    position: relative;
-    bottom: 200px;
-    margin: 30px;
+    padding: 10px;
+  
   }
 
  .mi-linea{
+   
     border: none;
-    background-color: black;
+    background-color: rgb(48, 3, 41);
     width: 100%;
     height: 2px;
+  }
+
+ 
+  .micontenido-conoceme{
+    margin-top: 20%;
   }
 
  .contenido-text-conoceme{
     width:90% ;
     margin: 30px;
+    margin-top: 100px;
     height: 200px;
     background-color: rgb(244, 240, 236);
-    border: 2px solid black;
+    border: 2px solid rgb(122, 14, 223);
     text-align: center;
     line-height: 30px;
-    position: relative;
+    
     
     
 }
@@ -194,10 +240,9 @@
    width:360px ;
     height: 200px;
     background-color: rgb(244, 240, 236);
-    border: 2px solid black;
+    border: 2px solid rgb(122, 14, 223);
     text-align: center;
     line-height: 30px;
-    position: relative;
    margin: 30px;
   }
  
@@ -209,7 +254,7 @@
     width:950px ;
     height: 600px;
     background-color: rgb(244, 240, 236);
-    border: 2px solid black;
+    border: 2px solid rgb(122, 14, 223);
     text-align: center;
     line-height: 30px;
     position: relative;
@@ -241,7 +286,7 @@
     width:560px ;
     height: 300px;
     background-color: rgb(244, 240, 236);
-    border: 2px solid black;
+    border: 2px solid rgb(122, 14, 223);
     text-align: center;
     line-height: 30px;
     position: relative;
@@ -260,7 +305,7 @@
     width:560px ;
     height: 300px;
     background-color: rgb(244, 240, 236);
-    border: 2px solid black;
+    border: 2px solid rgb(122, 14, 223);
     text-align: center;
     line-height: 30px;
     position: relative;
@@ -274,7 +319,7 @@
     width:560px ;
     height: 300px;
     background-color: rgb(244, 240, 236);
-    border: 2px solid black;
+    border: 2px solid rgb(122, 14, 223);
     text-align: center;
     line-height: 30px;
     position: relative;
@@ -293,7 +338,7 @@
     width:560px ;
     height: 300px;
     background-color: rgb(244, 240, 236);
-    border: 2px solid black;
+    border: 2px solid rgb(122, 14, 223);
     text-align: center;
     line-height: 30px;
     position: relative;
@@ -322,7 +367,7 @@
     width:460px ;
     height: 280px;
       background-color: rgb(244, 240, 236);
-    border: 2px solid black;
+      border: 2px solid rgb(122, 14, 223);
     text-align: center;
     line-height: 30px;
     position: relative;
@@ -342,7 +387,7 @@
     width:460px ;
       height: 280px;
       background-color: rgb(244, 240, 236);
-    border: 2px solid black;
+      border: 2px solid rgb(122, 14, 223);
     text-align: center;
     line-height: 30px;
       position: relative;
@@ -363,7 +408,7 @@
    width:460px ;
    height: 280px;
    background-color: rgb(244, 240, 236);
- border: 2px solid black;
+   border: 2px solid rgb(122, 14, 223);
  text-align: center;
  line-height: 30px;
    position: relative;
@@ -380,25 +425,33 @@
 
 
 
+
 .redes-sociales-footer{
    display: flex;
-   flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-    left: 80px;
-    top: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: -40%;
+    gap: 10px;
  }
  .botondefooter{
-    position: relative;
-    left: 70%;
+   display: flex;
+   justify-content: flex-end;
+   margin-bottom: 50px;
+ 
  }
- .usuariofooter{
-   position: relative;
-  left: 88%;
-  top: -30px;
+ .usuario-footer{
+  margin-right: 90px;
  }
  footer{
 
+   border: 2px solid rgb(122, 14, 223);
     background-color: rgb(228, 205, 244);
-    height: 190px;
+    height: 250px;
+ }
+ .titulo-footer{
+  display: flex;
+  justify-content: center;
+  margin-bottom: -20px;
+  margin-left: -38%;
  }
