@@ -44,30 +44,23 @@
 
  <!--Contenido principal-->
  <main>
-
       <h2 class="titulo-contacto">No te Pierdas de Nada</h2>
      <section class="contenedor-contacto">
-         <form action="">
-              <div class="nombreyapellido-contacto">
-                 <label for="nombreapellido">Nombre y Apellido</label>
-                 <input type="text" id="nombreapellido"> 
+         <form>
+             <div class="mb-3">
+                 <label for="email" class="form-label">Email</label>
+                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                 <div id="emailHelp" class="form-text">No compartiremos tu email con nadie mas.</div>
              </div>
-          
-              <div class="email-contacto">
-                  <label for="mail">Email</label>
-                  <input type="email" name="" id="mail">
+             <div class="mb-3">
+                  <label for="nombreyapellido" class="form-label">Nombre y apellido</label>
+                  <input type="nombre y apellido" class="form-control" id="exampleInputPassword1">
               </div>
-
-              <div class="mensaje-contacto">
-                  <label for="mensaje">Dejame tu mensaje</label>
-                  <textarea name="" id="mensaje">Ecribe aquí</textarea>
-              </div>
-              <div class="boton-contacto">
-                <button>Enviar</button>
-             </div>
-         </form>
+             <button type="enviar" class="btn btn-primary button">Enviar</button>
+          </form>
      </section>
  </main>
+ 
 <!--pie de pagina-->
  <footer>
       <p class="titulo-footer">¡SEGUIME EN MIS REDES!</p>
