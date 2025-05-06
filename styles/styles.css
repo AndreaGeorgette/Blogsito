@@ -566,6 +566,7 @@
    margin-left: -38%;
   }
 
+
   @media (max-width:768px){
 
     .conocemeimg{
@@ -607,7 +608,7 @@
    flex-direction: column;
    justify-content: center;
     margin-left: 6%;
-   width: 350px;
+  width: 350px;
 }
   
     .texto-ensalda-tips{
