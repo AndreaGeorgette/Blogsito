@@ -184,76 +184,87 @@
  }
  
  /* Pagina CONOCEME */
+.contenedor-conoceme{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+  padding: 20px;
 
- .conocemeimg{
-   display: flex;
-   justify-content: end;
-   margin-right: 30px;
-   
 }
 
-
+ .conocemeimg{
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: flex-end;
+   
+}
  .sobremi-text-conoceme{
+   flex: 1;
+   min-width: 300px;
    display: flex;
-   flex-wrap: nowrap;
    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    margin-top: -40%;
-    margin-left: 10%;
-    width:550px ;
-    height: 500px;
-    background-color: rgb(244, 240, 236);
-    border: 2px solid rgb(122, 14, 223);
-    text-align: center;
-    line-height: 30px;
-    padding: 10px;
-  
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(244, 240, 236);
+   border: 2px solid rgb(122, 14, 223);
+   text-align: center;
+   line-height: 30px;
+   padding: 20px;
   }
 
  .mi-linea{
-    border: none;
-    background-color: rgb(48, 3, 41);
-    width: 100%;
-    height: 2px;
+    border: 1px solid  rgb(48, 3, 41);
+    width: 70%;
+    margin: 10px auto;
   }
 
- 
-  .micontenido-conoceme{
-    margin-top: 15%;
-    margin-left: 30px;
-  }
-
- .contenido-text-conoceme{
-   display:flex ;
+ .emoticon-conoceme{
+   display: flex;
    justify-content: center;
-   align-items: center;
-    width:90% ;
-    margin: 30px;
-    margin-top: 100px;
-    height: 200px;
-    background-color: rgb(244, 240, 236);
-    border: 2px solid rgb(122, 14, 223);
-    text-align: center;
-    line-height: 30px; 
+   margin: 10px 0;
  }
 
- .curiosidades-conoceme{
-    margin-top: 5%;
-   margin-left: 30px;
+ .contenido-text-conoceme{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(244, 240, 236);
+   border: 2px solid rgb(122, 14, 223);
+   text-align: center;
+   line-height: 30px;
+   padding: 20px;
+   margin: 30px auto;
+   width: 90%;
+  }
+
+ .titulos-conoceme{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
   }
 
  .curiosidades-text-conoceme{
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   width:80% ;
-   height: 300px;
-   background-color: rgb(244, 240, 236);
-   border: 2px solid rgb(122, 14, 223);
-   margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(244, 240, 236);
+  border: 2px solid rgb(122, 14, 223);
+  text-align: center;
+  line-height: 30px;
+  padding: 20px;
+  margin: 30px auto;
+  width: 80%;
   }
  
+  .seccion-contenido,
+  .seccion-curiosidades {
+      padding: 100px;
+  }
 
 
  /* pagina Vlog */
@@ -270,7 +281,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 60px; /* Consistente con tus otros contenedores */
+  margin-bottom: 150px; /* Consistente con tus otros contenedores */
 }
 
 .mivlog article {
@@ -295,7 +306,7 @@
 
 .mivlog p {
   line-height: 30px;
-  background-color: rgb(244, 240, 236); /* Consistente con tu estilo */
+  background-color: rgb(244, 240, 236); /* Consistente con mi estilo */
   border: 2px solid rgb(122, 14, 223);
   padding: 20px;
   width: 100%; /* O el ancho que prefieras */
@@ -303,110 +314,155 @@
 }
 
  .titulo-videos-vlog{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+  gap: 15px; /* Espacio entre el título y la imagen */
  }
 
+
+ .section-vlog{
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 100px; /* Espacio entre secciones */
+  padding: 20px;
+  width: 100%;
+ }
+ .section-vlog-mudanza{
+  position: relative;
+  margin-top: 80px;
+  padding: 50px;
+  width: 100%;
+ }
+ .videos-vlog{
+  width: 100%;
+  max-width: 760px; /* Mantiene el ancho original */
+  height: 415px; /* Mantiene la altura original */
+  aspect-ratio: 16/9; /* Mantiene la proporción del video */
+  border-radius: 8px;
+ }
  .midiadia-vlog{
-   display: flex;
-   justify-content: start;
-   margin-top: 40px;
-   margin-left: 70px;
+  display: flex;
+  width: 760px;
+  position: relative;
+  z-index: 1;
+  margin-left: 5%;
+  margin-top: 30px;
  }
 
 
  .midiadia-text-vlog{
-   display: flex;
-   flex-wrap: nowrap;
-   flex-direction: column;
-   justify-content: center;
-   align-content: center;
-   text-align: center;
-   margin-top: -370px;
-   margin-left: 54%;
-    width:560px ;
-    height: 300px;
-    background-color: rgb(244, 240, 236);
-    border: 2px solid rgb(122, 14, 223);
-    text-align: center;
-    line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 560px;
+  height: auto;
+  min-height: 300px;
+  padding: 30px;
+  background-color: rgb(244, 240, 236);
+  border: 2px solid rgb(122, 14, 223);
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  z-index: 2;
+  top: 140px; /* Alinea el texto con la parte superior del video */
+  right: 11%;
+  border-radius: 8px;
   }
 
   .mis-viajes-vlog{
-   display: flex;
-   justify-content: end;
-   margin-top: 350px;
-   margin-right: 70px;
+    display: flex;
+    width: 760px;
+    position: relative;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top: 60px;
   }
 
  .viajes-text-vlog{
-   display: flex;
-   flex-wrap: nowrap;
-   flex-direction: column;
-   justify-content: center;
-    margin-top: -370px;
-    margin-left: 9%;
-    width:560px ;
-    height: 300px;
-    background-color: rgb(244, 240, 236);
-    border: 2px solid rgb(122, 14, 223);
-    text-align: center;
-    line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 560px;
+  height: auto;
+  min-height: 300px;
+  padding: 30px;
+  background-color: rgb(244, 240, 236);
+  border: 2px solid rgb(122, 14, 223);
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  z-index: 2;
+  top: 140px; /* Alinea el texto con la parte superior del video */
+  left: 9%;
+  border-radius: 8px;
 
   }
 
   .familiayamigos-vlog{
     display: flex;
-    justify-content: start;
-    margin-top: 350px;
-    margin-left: 70px;
+    width: 760px;
+    position: relative;
+    z-index: 1;
+    margin-left: 5%;
+    margin-top: 60px;
   }
 
  .familiayamigos-text-vlog{
-   display: flex;
-   flex-wrap: nowrap;
-   flex-direction: column;
-   justify-content: center;
-   align-content: center;
-   text-align: center;
-   margin-top: -370px;
-   margin-left: 54%;
-   width:560px ;
-   height: 300px;
-   background-color: rgb(244, 240, 236);
-   border: 2px solid rgb(122, 14, 223);
-   text-align: center;
-   line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 560px;
+  height: auto;
+  min-height: 300px;
+  padding: 30px;
+  background-color: rgb(244, 240, 236);
+  border: 2px solid rgb(122, 14, 223);
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  z-index: 2;
+  top: 140px; /* Alinea el texto con la parte superior del video */
+  right: 11%;
+  border-radius: 8px;
   }
 
   .mudanza-contenedor-vlog{
-   height: 600px;
+    position: relative;
+    height: auto;
+    min-height: 500px;
  }
 
   .mudanza-vlog{
     display: flex;
-   justify-content: end;
-   margin-top: 350px;
-   margin-right: 70px;
+    width: 760px;
+    position: relative;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top: 60px;
   }
 
  .mudanza-text-vlog{
-   display: flex;
-   flex-wrap: nowrap;
-   flex-direction: column;
-   justify-content: center;
-   align-content: center;
-   margin-top: -370px;
-   margin-left: 9%;
-   width:560px ;
-   height: 300px;
-   background-color: rgb(244, 240, 236);
-   border: 2px solid rgb(122, 14, 223);
-   text-align: center;
-   line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 560px;
+  height: auto;
+  min-height: 300px;
+  padding: 30px;
+  background-color: rgb(244, 240, 236);
+  border: 2px solid rgb(122, 14, 223);
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  z-index: 2;
+  top: 60px; /* Alinea el texto con la parte superior del video */
+  left: 5%;
+  border-radius: 8px;
   }
 
 
@@ -598,40 +654,22 @@
 
 
   @media (max-width:768px){
-
-    .conocemeimg{
-      justify-content: center;
-      margin-left: 20px;
-      width: 350px;
-    }
-
-    .sobremi-text-conoceme{
-      height: 750px;
-      width: 350px;
-      margin-top: 10px;
+    .contenedor-conoceme {
       flex-direction: column;
-     justify-content: center;
-    }
-
-    .micontenido-conoceme{
-     justify-content: center;
-   
-    }
-    .contenido-text-conoceme{
+  }
+  
+  .conocemeimg {
       justify-content: center;
-      height: 350px;
-    }
-    .curiosidades-conoceme{
-   
-      justify-content: center;
-      margin-left: 0;
-    }
-    .curiosidades-text-conoceme{
-      height: 450px;
-      flex-direction: column;
-     
-
-    }
+  }
+  
+  .sobremi-text-conoceme {
+      width: 100%;
+  }
+  
+  .contenido-text-conoceme,
+  .curiosidades-text-conoceme {
+      width: 100%;
+  }
 .contenedor-ensalada{
   flex-direction: column;
     align-items: center;
@@ -642,7 +680,7 @@
   width: 100%;
 }
   
-    .texto-ensalda-tips{
+ .texto-ensalda-tips{
       position: relative;
       width: 90%;
       margin-top: -50px;
@@ -683,5 +721,65 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 40px;
+  }
+
+  .mivlog {
+    margin-bottom: 50px;
+  }
+
+  .mivlog article {
+    width: 95%;
+  }
+
+  .mivlog iframe, .videos-vlog {
+    height: 250px;
+  }
+  .titulo-videos-vlog {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .titulo-videos-vlog img {
+    max-width: 50px;
+  }
+  
+  /* Secciones de videos */
+  .section-vlog {
+    padding: 10px;
+    margin-bottom: 100px; /* Espacio para el texto que ahora estará debajo */
+  }
+  .section-vlog-mudanza{
+    padding: 40px;
+  }
+  
+  /* Contenedores de video */
+  .midiadia-vlog, .mis-viajes-vlog, .familiayamigos-vlog, .mudanza-vlog {
+    width: 100%;
+    margin: 0;
+  }
+  
+  /* Cajas de texto */
+  .midiadia-text-vlog, .viajes-text-vlog, .familiayamigos-text-vlog, .mudanza-text-vlog {
+    position: relative;
+    width: 90%;
+    margin: 20px auto 0;
+    top: auto;
+    left: 0;
+    right: 0;
+    min-height: auto;
+    padding: 15px;
+  }
+  
+  /* Sección de mudanza */
+  .mudanza-contenedor-vlog {
+    min-height: auto;
+  }
+  
+  .mudanza-vlog {
+    margin: 0;
+  }
+  
+  .mudanza-text-vlog {
+    top: 0;
   }
   }
