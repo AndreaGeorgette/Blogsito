@@ -14,7 +14,7 @@
  <header >  
       <!-- el menu de navegacion-->
 
-      <nav class="navbar navbar-expand-lg  header-encabezado ">
+      <nav class="navbar navbar-expand-lg  header-encabezado  ">
           <div class="container-fluid">
               <h1 class="navbar-brand titulo-header" href="#">BLOGSITO</h1>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,22 +48,22 @@
        
  <!--Contenido principal-->
  <main>
-     <section class="container-fluid  "> 
-      <div class="video-bienvenida-inicio embed-responsive embed-responsive-1by1">
-          <article>
-                <iframe class="embed-responsive-item" width="1000" height="315" src="https://www.youtube.com/embed/KLRfWFrb4a0?si=Pb0gWAn4fokjmneZ" title="YouTube  video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </article>
-     </div>
-      <div class="texto-bienvenida-inicio "> 
-         <article> 
-                <H2>Bienvenida al Blogsito</H2>
-                <p>¡Bienvenidos a mi vlog! Aquí comparto historias, momentos especiales y todo lo que me inspira día a día. Acompáñame en esta aventura llena de creatividad, aprendizajes y mucha pasión. ¡Gracias por ser parte de esta comunidad!</p>
-         </article>
-     </div>
-
+     <section class="bienvenida-seccion "> 
+           <div class="video-bienvenida-inicio">
+             <article>
+                  <iframe class="video-principal"  src="https://www.youtube.com/embed/KLRfWFrb4a0?si=Pb0gWAn4fokjmneZ" title="YouTube  video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             </article>
+         </div>
+         <div class="texto-bienvenida-inicio "> 
+              <article> 
+                  <H2>Bienvenida al Blogsito</H2>
+                  <p >¡Bienvenidos a mi vlog! Aquí comparto historias, momentos especiales y todo lo que me inspira día a día. Acompáñame en esta aventura llena de creatividad, aprendizajes y mucha pasión. ¡Gracias por ser parte de esta comunidad!</p>
+              </article>
+           </div>
      </section>
+
       <!--Section donde se pueden Suscribir-->
-     <section>
+     <section class="suscribirse-secccion">
           <div class="suscribirse-inicio">
                <form action="">
                   <label for="Suscribirse">Unete a mi Comunidad</label>
@@ -74,35 +74,44 @@
      </section>
 
       <!--Section donde se pueden unir a la playlist-->
-     <section class=" playlist-inicio">
+     <section class=" playlist-seccion">
            <h3 class="playlist-titulo-inicio"> ¡Unite a la Playlist Bloguera! </h3>
            <div class="spotify-inicio">
-              <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO4bwDxS?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <iframe class="iframe-spotify"  src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO4bwDxS?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           </div>
      </section>
-     <!--Seccion de bienvenida con algunos blogs-->
-     <section>
-      <div class="Conocemisvlogs-inicio">
-            <h2>Conoce Algunos De Mis Vlogs</h2>
-            
+
+
+       <div class="titulo-videos-vlog">
+          <h2>Conoce Algunos De Mis Vlogs</h2> 
+          <div>
+             <img src="./assets/img/grabar.png" alt="">
+         </div> 
       </div>
+
+     <!--Seccion de bienvenida con algunos blogs-->
+     <section class="section-vlog-inicio">
          <hr class="mi-linea">
          <article>
               <div class="video-midia-inicio">
-                    <iframe width="760" height="415" src="https://www.youtube.com/embed/N101hb4Srnc?si=UmCkkNcaKu0o29M9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe  class="videos-vlog-inicio" src="https://www.youtube.com/embed/N101hb4Srnc?si=UmCkkNcaKu0o29M9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
              </div>
-               <div class="midia-inicio">
+         </article>
+         <article>
+               <div class="midia-text-inicio">
                  <h3>Mi Dia a Dia</h3>
                  <hr class="mi-linea">
                  <p>Hoy te invito a acompañarme en un día más de mi vida. Entre rutinas, momentos especiales y pequeñas aventuras, quiero compartir contigo todo lo que hace único cada instante. ¡Vamos a disfrutarlo juntos!</p>
              </div>
          </article>
      </section>
-     <section>
+     <section class="section-vlog-inicio">
          <article>
                <div class="video-viajes-inicio">
-                    <iframe width="760" height="415" src="https://www.youtube.com/embed/2ckigbK5R7w?si=whwpTYwl878Ns_AY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="videos-vlog-inicio" src="https://www.youtube.com/embed/2ckigbK5R7w?si=whwpTYwl878Ns_AY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
              </div>
+         </article>
+         <article>
                <div class="misviajes-inicio">
                     <h3>Mis Viajes</h3>
                     <hr class="mi-linea">
@@ -110,11 +119,13 @@
              </div>
          </article>
      </section>
-      <section>
-         <article class="familia-contenedor-inicio">
+      <section class="section-familia-inicio">
+         <article>
               <div class="video-familia-inicio">
-                  <iframe width="760" height="415" src="https://www.youtube.com/embed/03O_zn9u9K8?si=HkJ7ZRj8q-5HgrUS" title="YouTube video  player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe  class="videos-vlog-inicio" src="https://www.youtube.com/embed/03O_zn9u9K8?si=HkJ7ZRj8q-5HgrUS" title="YouTube video  player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
              </div>
+         </article>
+         <article>
                <div class="familiayamigos-inicio">
                     <h3>Familia y Amigos</h3>
                     <hr class="mi-linea">
@@ -126,20 +137,22 @@
 
   <!--para el pie de pagina-->
  <footer>
-     <p class="titulo-footer">¡SEGUIME EN MIS REDES!</p>
-     <div class="redes-sociales-footer">
-            <img src="./assets/img/logotipo-de-instagram (3).png" alt="logo tipo de instagram">
-            <img src="./assets/img/youtube (2).png" alt="logo tipo de tiktok">
-            <img src="./assets/img/tik-tok (2).png" alt="logo tipo de youtube" srcset="">
-        </div>
-      <div class="botondefooter">
-         <form action="">
-                <label for="Suscribirse">Unete a mi Comunidad</label>
-                <button>Suscribirse</button>
-         </form>
-         <img class="usuario-footer" src="./assets/img/usuario (3).png" alt="logo-tipo-de-usuario">
-      </div>
-   
+    <section class="footer-container">
+         <p class="titulo-footer">¡SEGUIME EN MIS REDES!</p>
+         <div class="redes-sociales-footer">
+               <img src="./assets/img/logotipo-de-instagram (3).png" alt="logo tipo de instagram">
+               <img src="./assets/img/youtube (2).png" alt="logo tipo de tiktok">
+               <img src="./assets/img/tik-tok (2).png" alt="logo tipo de youtube" srcset="">
+         </div>
+     </section>
+     <section>
+         <div class="botondefooter">
+              <form class="botondefooter-form" action="">
+                   <label for="Suscribirse">Unete a mi Comunidad</label>
+                   <button>Suscribirse</button>
+             </form>
+          </div>
+     </section>
  </footer>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>

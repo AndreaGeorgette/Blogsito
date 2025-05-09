@@ -2,16 +2,14 @@
   /* encabezado-menu de navergacion- h1- main */
   .header-encabezado{
    background-color: rgb(228, 205, 244);
-   height: 150PX;
    padding: 30px;
    border: 2px solid rgb(122, 14, 223);
-    
  }
 
 
  li{
    display: inline;
-   padding: 50px;
+   padding: 40px;
  }
 
  .titulo-header{
@@ -35,27 +33,43 @@
  
    /* pagina de inicio */
  
+   .bienvenida-seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
   .video-bienvenida-inicio{
-   display: flex;
-   justify-content: center;
-   background-color:beige ;
-   margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: beige;
+    padding: 20px 0;
+    max-width: 100%;
     
+  }
+  .video-principal{
+    width: 100%;
+    aspect-ratio: 16/9;
+    height: 500px;
+    min-width: 800px;
+    border-radius: 8px;
   }
 
   .texto-bienvenida-inicio{
-    display: flex;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-left: 305px;
-    width:950px ;
-    height: 200px;
-    background-color: rgb(244, 240, 236);
-    border: 2px solid rgb(122, 14, 223);
-    line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  max-width: 950px;
+  padding: 20px;
+  background-color: rgb(244, 240, 236);
+  border: 2px solid rgb(122, 14, 223);
+  line-height: 30px;
+  margin-top: 20px;
+  border-radius: 8px;
     
   }
  
@@ -74,31 +88,40 @@
  }
 
   button{
-   background-color: rgb(122, 14, 223);
+    background-color: rgb(122, 14, 223);
+    color: white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
  }
- .button{
-  background-color: rgb(122, 14, 223);
- }
+
   
   .playlist-titulo-inicio{
    display: flex;
    justify-content: center;
    align-items: flex-end;
-   margin-top: 80px;
+   margin-top: 30px;
   }
 
-  .playlist-inicio{
-   width: 100%;
-   height: 350px;
-   border: 2px solid rgb(122, 14, 223);
-   background-color:rgb(228, 205, 244);
+  .playlist-seccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    background-color: rgb(228, 205, 244);
+    border: 2px solid rgb(122, 14, 223);
+    margin-bottom: 100px;
  }
 
  .spotify-inicio{
-   display: flex;
-   justify-content: center;
-   margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
    
+ }
+ .iframe-spotify{
+  width: 30%;
+  height: 100px;
  }
 
   .Conocemisvlogs-inicio{
@@ -108,79 +131,109 @@
     margin-top: 120px;
 
   }
-
+  .videos-vlog-inicio{
+    max-width: 760px; /* Mantiene el ancho original */
+    height: 415px; /* Mantiene la altura original */
+    aspect-ratio: 16/9; /* Mantiene la proporción del video */
+    border-radius: 8px;
+  }
+.section-vlog-inicio{
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 100px; /* Espacio entre secciones */
+  padding: 20px;
+  width: 100%;
+}
   .video-midia-inicio{
     display: flex;
-    justify-content: start;
-    margin-top: 60px;
-    margin-left: 70px;
-    
+    width: 760px;
+    position: relative;
+    z-index: 1;
+    margin-left: 5%;
+    margin-top: 30px;
   }
 
- .midia-inicio{
-   display: flex;
-   flex-wrap: nowrap;
-   flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    margin-top: -370px;
-    margin-left: 54%;
-    width:560px ;
-    height: 300px;
-    background-color: rgb(244, 240, 236);
-    border: 2px solid rgb(122, 14, 223);
-    line-height: 30px;  
+ .midia-text-inicio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 560px;
+  height: auto;
+  min-height: 300px;
+  padding: 30px;
+  background-color: rgb(244, 240, 236);
+  border: 2px solid rgb(122, 14, 223);
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  z-index: 2;
+  top: 140px; /* Alinea el texto con la parte superior del video */
+  right: 11%;
+  border-radius: 8px; 
  }
 
  .video-viajes-inicio{
-   display: flex;
-   justify-content: start;
-   margin-top: 350px;
-   margin-left: 70px;
+  display: flex;
+  width: 760px;
+  position: relative;
+  z-index: 1;
+  margin-left: 5%;
+  margin-top: 30px;
  }
 
  .misviajes-inicio{
-   display: flex;
-   flex-wrap: nowrap;
-   flex-direction: column;
-   justify-content: center;
-   align-content: center;
-   text-align: center;
-   margin-top: -370px;
-   margin-left: 54%;
-   width:560px ;
-   height: 300px;
-   background-color: rgb(244, 240, 236);
-   border: 2px solid rgb(122, 14, 223);
-   line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 560px;
+  height: auto;
+  min-height: 300px;
+  padding: 30px;
+  background-color: rgb(244, 240, 236);
+  border: 2px solid rgb(122, 14, 223);
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  z-index: 2;
+  top: 140px; /* Alinea el texto con la parte superior del video */
+  right: 11%;
+  border-radius: 8px;
  }
 
- .familia-contenedor-inicio{
-    height: 500px;
+ .section-familia-inicio{
+  position: relative;
+  margin-top: 80px;
+  padding: 50px;
+  width: 100%;
  }
+
 
  .video-familia-inicio{
-   display: flex;
-   justify-content: start;
-   margin-top: 350px;
-   margin-left: 70px;
+  display: flex;
+  width: 760px;
+  position: relative;
+  z-index: 1;
+  margin-left: 5%;
+  margin-top: 30px;
  }
 
  .familiayamigos-inicio{
-   display: flex;
-   flex-wrap: nowrap;
-   flex-direction: column;
-   justify-content: center;
-   align-content: center;
-   text-align: center;
-   margin-top: -370px;
-   margin-left: 54%;
-   width:560px ;
-   height: 300px;
-   background-color: rgb(244, 240, 236);
-   border: 2px solid rgb(122, 14, 223);
-   line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 560px;
+  height: auto;
+  min-height: 300px;
+  padding: 30px;
+  background-color: rgb(244, 240, 236);
+  border: 2px solid rgb(122, 14, 223);
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  z-index: 2;
+  top: 140px; /* Alinea el texto con la parte superior del video */
+  right: 11%;
+  border-radius: 8px;
  }
  
  /* Pagina CONOCEME */
@@ -199,6 +252,7 @@
     min-width: 300px;
     display: flex;
     justify-content: flex-end;
+    border-radius: 8px;
    
 }
  .sobremi-text-conoceme{
@@ -213,6 +267,7 @@
    text-align: center;
    line-height: 30px;
    padding: 20px;
+   border-radius: 8px;
   }
 
  .mi-linea{
@@ -238,6 +293,7 @@
    padding: 20px;
    margin: 30px auto;
    width: 90%;
+   border-radius: 8px;
   }
 
  .titulos-conoceme{
@@ -259,6 +315,7 @@
   padding: 20px;
   margin: 30px auto;
   width: 80%;
+  border-radius: 8px;
   }
  
   .seccion-contenido,
@@ -284,7 +341,7 @@
   margin-bottom: 150px; /* Consistente con tus otros contenedores */
 }
 
-.mivlog article {
+.mivlog-article {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -293,18 +350,18 @@
   max-width: 800px; /* Para limitar el ancho máximo */
 }
 
-.mivlog iframe {
+.mivlog-iframe {
   width: 100%;
   max-width: 660px; /* Mantiene el ancho original */
   height: 415px; /* Mantiene la altura original */
   margin-bottom: 20px; /* Espacio entre el video y el título */
   border-radius: 8px; /* Opcional: esquinas redondeadas */
 }
-.mivlog h3 {
+.mivlog-h3 {
   margin-bottom: 15px;
 }
 
-.mivlog p {
+.mivlog-p {
   line-height: 30px;
   background-color: rgb(244, 240, 236); /* Consistente con mi estilo */
   border: 2px solid rgb(122, 14, 223);
@@ -620,40 +677,141 @@
 
  /*  footer*/
 
-.redes-sociales-footer{
-   display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-left: -40%;
-    gap: 10px;
- }
-
- .botondefooter{
-   display: flex;
-   justify-content: flex-end;
-   margin-bottom: 50px;
+footer {
+  background-color: rgb(228, 205, 244);
+  border: 2px solid rgb(122, 14, 223);
+  padding: 20px;
+  display: flex;
+  margin: 10px 0;
+  width: 100%;
  
- }
- .usuario-footer{
-    margin-right: 90px;
-  }
+}
 
- footer{
-   border: 2px solid rgb(122, 14, 223);
-    background-color: rgb(228, 205, 244);
-    height: 250px;
- }
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  align-items: center;
+}
 
- .titulo-footer{
-   display: flex; 
-   justify-content: center;
-   margin-bottom: -20px;
-   margin-left: -38%;
-  }
+.titulo-footer {
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+.redes-sociales-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: -10%;
+  gap: 10px;
+}
+
+.botondefooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.container-usuario {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
 
 
   @media (max-width:768px){
+
+ /* Video principal */
+ .video-principal {
+  min-width: unset;
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+
+}
+
+.video-bienvenida-inicio {
+  padding: 15px;
+}
+
+.texto-bienvenida-inicio {
+  position: relative;
+  width: 90%;
+  margin: 20px auto 0;
+  top: auto;
+  left: 0;
+  right: 0;
+  min-height: auto;
+  padding: 15px;
+}
+
+/* Sección de suscripción */
+.suscribirse-inicio {
+  margin-left: 0;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+}
+
+.usuario-inicio {
+  margin-right: 0;
+  max-width: 100px;
+}
+
+/* Spotify iframe */
+.iframe-spotify {
+  width: 70%;
+}
+
+/* Secciones de videos blog */
+.section-vlog-inicio,
+.section-familia-inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.video-midia-inicio,
+.video-viajes-inicio,
+.video-familia-inicio {
+  width: 100%;
+  margin-left: 0;
+}
+
+.videos-vlog-inicio {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 350px; /* Altura mínima para asegurar buen tamaño */
+}
+
+.midia-text-inicio,
+.misviajes-inicio,
+.familiayamigos-inicio {
+  position: relative;
+  width: 90%;
+  margin: 20px auto 0;
+  top: auto;
+  left: 0;
+  right: 0;
+  min-height: auto;
+  padding: 15px;
+}
+
+.titulo-videos-vlog {
+  text-align: center;
+}
+
+
     .contenedor-conoceme {
       flex-direction: column;
   }
@@ -782,4 +940,22 @@
   .mudanza-text-vlog {
     top: 0;
   }
+  footer {
+    flex-direction: column;
+  }
+  .botondefooter {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .container-usuario {
+    justify-content: center;
+    width: 100%;
+  }
+  .redes-sociales-footer {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
   }
