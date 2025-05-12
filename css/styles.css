@@ -70,6 +70,12 @@ footer {
   justify-content: flex-end;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
 main {
   background-color: beige;
   margin-top: 30px;
@@ -96,7 +102,8 @@ main {
   width: 100%;
   aspect-ratio: 16/9;
   height: 500px;
-  min-width: 800px;
+  max-width: 100%;
+  min-width: auto;
   border-radius: 8px;
 }
 
@@ -119,14 +126,18 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 40%;
-  width: 400px;
-  height: 200px;
-  font-style: initial;
+  margin-left: 0;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto; /* Centrar el contenedor */
+  height: auto; /* Cambiado de 200px a auto */
+  padding: 20px;
+  flex-wrap: wrap; /* Permitir que los elementos se ajusten */
 }
 
 .usuario-inicio {
-  margin-right: 90px;
+  margin: auto;
+  max-width: 80px;
 }
 
 button {
@@ -152,6 +163,7 @@ button {
   background-color: rgb(228, 205, 244);
   border: 2px solid rgb(122, 14, 223);
   margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 .spotify-inicio {
@@ -189,7 +201,8 @@ button {
 
 .video-midia-inicio {
   display: flex;
-  width: 760px;
+  width: 100%;
+  max-width: 760px;
   position: relative;
   z-index: 1;
   margin-left: 5%;
@@ -217,7 +230,8 @@ button {
 
 .video-viajes-inicio {
   display: flex;
-  width: 760px;
+  width: 100%;
+  max-width: 760px;
   position: relative;
   z-index: 1;
   margin-left: 5%;
@@ -252,7 +266,8 @@ button {
 
 .video-familia-inicio {
   display: flex;
-  width: 760px;
+  width: 100%;
+  max-width: 760px;
   position: relative;
   z-index: 1;
   margin-left: 5%;
@@ -573,6 +588,12 @@ button {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.seccion-tips {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .contenedor-ensalada {

@@ -1,6 +1,11 @@
  @use "../utils/mixin" as *;
  @use "../utils/variables" as *;
  
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
 
   main{
    background-color: beige;
@@ -28,7 +33,8 @@
     width: 100%;
     aspect-ratio: 16/9;
     height: 500px;
-    min-width: 800px;
+    max-width: 100%;
+    min-width: auto;
     border-radius: 8px;
   }
 
@@ -46,17 +52,21 @@
   }
  
   .suscribirse-inicio{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 40%;
-    width: 400px;
-    height: 200px;
-    font-style: initial;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 0; 
+  width: 100%; 
+  max-width: 400px;
+  margin: 0 auto; /* Centrar el contenedor */
+  height: auto; /* Cambiado de 200px a auto */
+  padding: 20px;
+  flex-wrap: wrap; /* Permitir que los elementos se ajusten */
   }
 
  .usuario-inicio{
-    margin-right: 90px;
+   margin: auto;
+   max-width: 80px;
  }
 
   button{
@@ -81,6 +91,7 @@
     background-color: $colorfondomyf;
     border: 2px solid $colorborde;
     margin-bottom: 100px;
+    margin-top: 100px;
  }
 
  .spotify-inicio{
@@ -116,7 +127,8 @@
 }
   .video-midia-inicio{
     display: flex;
-    width: 760px;
+    width: 100%; 
+    max-width: 760px;
     position: relative;
     z-index: 1;
     margin-left: 5%;
@@ -141,7 +153,8 @@
 
  .video-viajes-inicio{
    display: flex;
-   width: 760px;
+   width: 100%; 
+  max-width: 760px;
    position: relative;
    z-index: 1;
    margin-left: 5%;
@@ -174,7 +187,8 @@
 
  .video-familia-inicio{
    display: flex;
-   width: 760px;
+   width: 100%; 
+   max-width: 760px;
    position: relative;
    z-index: 1;
    margin-left: 5%;
@@ -475,7 +489,11 @@
    align-items: center;
    text-align: center; 
   }
-
+.seccion-tips{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
  .contenedor-ensalada{
   display: flex;
   justify-content: center;
