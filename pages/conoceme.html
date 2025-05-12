@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogsito - Conoceme</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <!--inserta contenido del encabezado-->
@@ -45,10 +46,10 @@
  <!--seccion principal con informacion sobre mi-->
  <main>
        <section class="contenedor-conoceme">
-            <div class="conocemeimg">
+            <div class="conocemeimg" data-aos="fade-right">
                 <img src="../assets/img/catherine-conoceme (3).jpg" class="img-fluid" alt="selfie de cahterin mirando a la camara">
            </div>
-           <div class="sobremi-text-conoceme">
+           <div class="sobremi-text-conoceme" data-aos="fade-left">
                 <h2> Sobre Mi</h2>
                   <div class="emoticon-conoceme"> 
                       <img src="../assets/img/usuario-con-corazon.png" alt="usuario con un corazon">
@@ -61,7 +62,7 @@
                     Además de trabajar en redes sociales, tengo una tienda online llamada Cavali, que también cuenta con un espacio físico en Suri Studio en Jardines Plaza.</p>
             </div>
        </section>
-      <section class="seccion-conoceme">
+      <section class="seccion-conoceme"data-aos="fade-up">
              <div class="titulos-conoceme">
                  <h3> Mi Contenido</h3>
                  <div class="emoticon-conoceme">
@@ -74,7 +75,7 @@
                     En un momento de mi vida quise dejar de hacer videos después de que una amiga me dijera que pasaba pena en internet, hasta que un amigo me dijo que siguiera haciendo videos si eso era lo que me hacia feliz.</P>
             </div>
       </section>
-      <section class="seccion-curiosisades">
+      <section class="seccion-curiosisades" data-aos="fade-up">
             <div class="titulos-conoceme">
                  <h3> Curiosidades</h3>
                  <div class="emoticon-conoceme">
@@ -111,5 +112,9 @@
       </section>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+    </script>
 </body>
 </html>

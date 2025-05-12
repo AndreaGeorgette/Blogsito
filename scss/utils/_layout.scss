@@ -1,0 +1,79 @@
+ 
+ @use "../utils/mixin" as *;
+ @use "../utils/variables" as *;
+ 
+ /* encabezado-menu de navergacion- h1- h2-main */
+  .header-encabezado{
+   background-color: $colorfondomyf;
+   padding: 30px;
+   border: 2px solid $colorborde;
+   
+ }
+
+
+ li{
+   display: inline;
+   padding: 40px;
+ }
+
+ .titulo-header{
+  font-size: 40px;
+  gap: 200px;
+ }
+
+ .nav-a:hover {
+   color: blueviolet;
+ }
+ 
+ p{
+  font-size: 16px;
+ }
+
+
+ 
+ /*  footer*/
+
+footer {
+  background-color: $colorfondomyf;
+  border: 2px solid $colorborde;
+  padding: 20px;
+  display: flex;
+  margin: 10px 0;
+  width: 100%;
+ 
+}
+
+.footer-container {
+ @include flexalingitems;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.titulo-footer {
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+.redes-sociales-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: -10%;
+  gap: 10px;
+}
+
+.botondefooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.container-usuario {
+  display: flex;
+  justify-content: flex-end;
+}
+

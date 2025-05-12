@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogsito - Mis Tips</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
    
@@ -47,14 +48,14 @@
  <main class="maintips">
      <div class="titulo-tips">
        <h2>Mis Tips</h2>
-       <img src="../assets/img/varita-magica.png" class="img-fluid" alt="imagen emoticon de varita con chispas">
+       <img src="../assets/img/varita-magica.png"  alt="imagen emoticon de varita con chispas">
     </div>
      <section>
          <article class="contenedor-ensalada">
-            <div class="ensalada-tips">
+            <div class="ensalada-tips" data-aos="fade-right">
               <img src="../assets/img/ensalada-tips 2 (2).jpeg" class="img-fluid" alt="imagen de un recipiente lleno de verduras">
             </div>
-            <div class="texto-ensalda-tips">
+            <div class="texto-ensalda-tips" >
               <h3>Comer Mas Sano</h3>
               <p>Tip del día: Agrega más colores a tu plato. Frutas y verduras variadas no solo se ven bien, ¡también nutren y te hacen sentir mejor!</p>
             </div>
@@ -62,11 +63,11 @@
       </section>
 
       <section>
-       <article class="contenedor-maquillaje">
-          <div class="maquillaje-tips">
+       <article class="contenedor-maquillaje" >
+          <div class="maquillaje-tips" data-aos="fade-right" >
              <img src="../assets/img/maquillajesobretelaytacones.jpg" class="img-fluid" alt="imagen de productos de maquillaje">
           </div>
-          <div class="texto-maquillaje-tips">
+          <div class="texto-maquillaje-tips" >
              <h3>Trucos de Maquillaje</h3>
              <p> Elige productos que se adapten a tu piel. Una base ligera, un buen iluminador y un toque de máscara de pestañas pueden transformarte en minutos. ¡Los cosméticos adecuados hacen magia!.</p>
           </div>
@@ -75,10 +76,10 @@
 
       <section>
          <article class="contenedor-skinacre-tips">
-            <div class="skincare-tips">
+            <div class="skincare-tips" data-aos="fade-right" >
               <img src="../assets/img/skincare-tips.jpeg" class="img-fluid" alt="imagen de productos de skincare">
             </div>
-            <div class="texto-skincare-tips">
+            <div class="texto-skincare-tips" >
               <h3>Rutina de Skincare</h3>
              <p>La clave está en la constancia. Limpia, hidrata y protege tu piel todos los días con productos adecuados para tu tipo de piel. ¡Tu rostro te lo agradecerá!.</p>
             </div>
@@ -106,5 +107,9 @@
     </section>
 </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+   </script>
 </body>
 </html>

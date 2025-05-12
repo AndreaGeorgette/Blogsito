@@ -1,0 +1,593 @@
+ @use "../utils/mixin" as *;
+ @use "../utils/variables" as *;
+ 
+
+  main{
+   background-color: beige;
+    margin-top: 30px;
+
+  }
+ 
+   /* pagina de inicio */
+ 
+   .bienvenida-seccion {
+     @include flexalingitems;
+      width: 100%;
+    }
+
+  .video-bienvenida-inicio{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: beige;
+    padding: 20px 0;
+    max-width: 100%;
+    
+  }
+  .video-principal{
+    width: 100%;
+    aspect-ratio: 16/9;
+    height: 500px;
+    min-width: 800px;
+    border-radius: 8px;
+  }
+
+  .texto-bienvenida-inicio{
+   @include flexcolumncenter;
+   width: 80%;
+   max-width: 950px;
+   padding: 20px;
+   background-color:$colorfondocajas;
+   border: 2px solid $colorborde;
+   line-height: 30px;
+   margin-top: 20px;
+   border-radius: 8px;
+    
+  }
+ 
+  .suscribirse-inicio{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40%;
+    width: 400px;
+    height: 200px;
+    font-style: initial;
+  }
+
+ .usuario-inicio{
+    margin-right: 90px;
+ }
+
+  button{
+    background-color: $colorborde;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+ }
+
+  
+  .playlist-titulo-inicio{
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   margin-top: 30px;
+  }
+
+  .playlist-seccion{
+   @include flexalingitems;
+    padding: 20px 0;
+    background-color: $colorfondomyf;
+    border: 2px solid $colorborde;
+    margin-bottom: 100px;
+ }
+
+ .spotify-inicio{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+
+  }
+ .iframe-spotify{
+   width: 30%;
+   height: 100px;
+  }
+
+  .Conocemisvlogs-inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+
+  }
+  .videos-vlog-inicio{
+    max-width: 760px; /* Mantiene el ancho original */
+    height: 415px; /* Mantiene la altura original */
+    aspect-ratio: 16/9; /* Mantiene la proporción del video */
+    border-radius: 8px;
+  }
+.section-vlog-inicio{
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 100px; /* Espacio entre secciones */
+  padding: 20px;
+  width: 100%;
+}
+  .video-midia-inicio{
+    display: flex;
+    width: 760px;
+    position: relative;
+    z-index: 1;
+    margin-left: 5%;
+    margin-top: 30px;
+  }
+
+ .midia-text-inicio{
+   @include flexcolumncenter;
+   width: 560px;
+   height: auto;
+   min-height: 300px;
+   padding: 30px;
+   background-color: $colorfondocajas;
+   border: 2px solid $colorborde;
+   line-height: 30px;
+   position: absolute;
+    z-index: 2;
+   top: 140px; 
+   right: 11%;
+   border-radius: 8px; 
+ }
+
+ .video-viajes-inicio{
+   display: flex;
+   width: 760px;
+   position: relative;
+   z-index: 1;
+   margin-left: 5%;
+   margin-top: 30px;
+ }
+
+ .misviajes-inicio{
+   @include flexcolumncenter;
+   width: 560px;
+   height: auto;
+   min-height: 300px;
+   padding: 30px;
+   background-color: $colorfondocajas;
+   border: 2px solid $colorborde;
+   line-height: 30px;
+   position: absolute;
+   z-index: 2;
+   top: 140px; 
+   right: 11%;
+   border-radius: 8px;
+ }
+
+ .section-familia-inicio{
+   position: relative;
+   margin-top: 80px;
+   padding: 50px;
+   width: 100%;
+ }
+
+
+ .video-familia-inicio{
+   display: flex;
+   width: 760px;
+   position: relative;
+   z-index: 1;
+   margin-left: 5%;
+   margin-top: 30px;
+ }
+
+ .familiayamigos-inicio{
+   @include flexcolumncenter;
+   width: 560px;
+   height: auto;
+   min-height: 300px;
+   padding: 30px;
+   background-color:$colorfondocajas;
+   border: 2px solid $colorborde;
+   line-height: 30px;
+   position: absolute;
+   z-index: 2;
+   top: 140px; 
+   right: 11%;
+   border-radius: 8px;
+ }
+ 
+ /* Pagina CONOCEME */
+.contenedor-conoceme{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 20px;
+   position: relative;
+   padding: 20px;
+
+  }
+
+ .conocemeimg{
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 8px;
+   
+  }
+ .sobremi-text-conoceme{
+   @include flexcolumncenter;
+   flex: 1;
+   min-width: 300px;
+   align-items: center;
+   background-color: $colorfondocajas;
+   border: 2px solid $colorborde;
+   line-height: 30px;
+   padding: 20px;
+   border-radius: 8px;
+  }
+
+ .mi-linea{
+    border: 1px solid  rgb(48, 3, 41);
+    width: 70%;
+    margin: 10px auto;
+  }
+
+ .emoticon-conoceme{
+   display: flex;
+   justify-content: center;
+   margin: 10px 0;
+ }
+
+ .contenido-text-conoceme{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color:$colorfondocajas;
+   border: 2px solid $colorborde;
+   text-align: center;
+   line-height: 30px;
+   padding: 20px;
+   margin: 30px auto;
+   width: 90%;
+   border-radius: 8px;
+  }
+
+ .titulos-conoceme{
+   @include flexalingitems;
+   margin-top: 100px;
+  }
+
+ .curiosidades-text-conoceme{
+   @include flexcolumncenter;
+   align-items: center;
+   background-color: $colorfondocajas;
+   border: 2px solid $colorborde;
+   line-height: 30px;
+   padding: 20px;
+   margin: 30px auto;
+   width: 80%;
+   border-radius: 8px;
+  }
+ 
+  .seccion-contenido,
+  .seccion-curiosidades {
+   padding: 100px;
+  }
+
+
+ /* pagina Vlog */
+
+ .h2-titulo-vlog{
+   height: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+ }
+
+ .mivlog {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   margin-bottom: 150px; 
+  }
+
+.mivlog-article {
+ @include flexcolumncenter;
+  width: 80%; 
+  max-width: 800px; /* Para limitar el ancho máximo */
+}
+
+.mivlog-iframe {
+  width: 100%;
+  max-width: 800px; 
+  height: 415px; 
+  margin-bottom: 20px; /* Espacio entre el video y el título */
+  border-radius: 8px; /*  esquinas redondeadas */
+}
+.mivlog-h3 {
+  margin-bottom: 15px;
+}
+
+.mivlog-p {
+  line-height: 30px;
+  background-color: $colorfondocajas; 
+  border: 2px solid $colorborde;
+  padding: 20px;
+  width: 100%; 
+  border-radius: 8px;
+}
+
+ .titulo-videos-vlog{
+   @include flexcolumncenter;
+   margin-bottom: 10px;
+   gap: 15px; /* Espacio entre el título y la imagen */
+ }
+
+
+ .section-vlog{
+   position: relative;
+   margin-top: 20px;
+   margin-bottom: 100px; /* Espacio entre secciones */
+   padding: 20px;
+   width: 100%;
+  }
+ 
+ .section-vlog-mudanza{
+   position: relative;
+   margin-top: 80px;
+   padding: 50px;
+   width: 100%;
+  }
+
+ .videos-vlog{
+   width: 100%;
+   max-width: 760px; 
+   height: 415px; 
+   aspect-ratio: 16/9; /* Mantiene la proporción del video */
+   border-radius: 8px;
+ }
+
+ .midiadia-vlog{
+   display: flex;
+   justify-content: center;
+   width: 760px;
+   position: relative;
+   z-index: 1;
+   margin-left: 5%;
+   margin-top: 30px;
+ }
+
+
+ .midiadia-text-vlog{
+   @include flexcolumncenter;
+   width: 560px;
+   height: auto;
+   min-height: 300px;
+   padding: 30px;
+   background-color:$colorfondocajas;
+   border: 2px solid $colorborde;
+   line-height: 30px;
+   position: absolute;
+   z-index: 2;
+   top: 140px; 
+   right: 11%;
+   border-radius: 8px;
+  }
+
+  .mis-viajes-vlog{
+    display: flex;
+    justify-content: center;
+    width: 760px;
+    position: relative;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top: 60px;
+  }
+
+ .viajes-text-vlog{
+   @include flexcolumncenter;
+   width: 560px;
+   height: auto;
+   min-height: 300px;
+   padding: 30px;
+   background-color: $colorfondocajas;
+   border: 2px solid $colorborde;
+   line-height: 30px;
+   position: absolute;
+   z-index: 2;
+   top: 140px; 
+   left: 9%;
+   border-radius: 8px;
+  }
+
+  .familiayamigos-vlog{
+    display: flex;
+    justify-content: center;
+    width: 760px;
+    position: relative;
+    z-index: 1;
+    margin-left: 5%;
+    margin-top: 60px;
+  }
+
+ .familiayamigos-text-vlog{
+   @include flexcolumncenter;
+   width: 560px;
+   height: auto;
+   min-height: 300px;
+   padding: 30px;
+   background-color: $colorfondocajas;
+   border: 2px solid $colorborde;
+   line-height: 30px;
+   position: absolute;
+   z-index: 2;
+   top: 140px; 
+   right: 11%;
+   border-radius: 8px;
+  }
+
+  .mudanza-contenedor-vlog{
+    position: relative;
+    height: auto;
+    min-height: 500px;
+ }
+
+  .mudanza-vlog{
+    display: flex;
+    justify-content: center;
+    width: 760px;
+    position: relative;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top: 60px;
+  }
+
+ .mudanza-text-vlog{
+   @include flexcolumncenter;
+   width: 560px;
+   height: auto;
+   min-height: 300px;
+   padding: 30px;
+   background-color: $colorfondocajas;
+   border: 2px solid $colorborde;
+   line-height: 30px;
+   position: absolute;
+   z-index: 2;
+   top: 60px; 
+   left: 5%;
+   border-radius: 8px;
+  }
+
+
+
+
+ /* pagina TIPS */
+
+ .titulo-tips{
+   height: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center; 
+  }
+
+ .contenedor-ensalada{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin-bottom: 80px;
+ }
+
+ .ensalada-tips{
+  width: 60%; 
+  }
+
+ .texto-ensalda-tips{
+   @include flexnowrap;
+   position: absolute;
+   right: 22%;
+   top: 50%;
+   transform: translateY(-50%);  /* Centra verticalmente */
+   width: 460px;
+   padding: 20px;
+   background-color:$colorfondocajas;
+   border: 2px solid $colorborde;
+    line-height: 30px;
+    border-radius: 8px;
+ }
+
+ .contenedor-maquillaje{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin-bottom: 80px;
+
+ }
+
+ .maquillaje-tips{
+ width: 60%; 
+  
+ }
+ .texto-maquillaje-tips{
+   @include flexnowrap;
+   position: absolute;
+   right: 22%;
+   top: 50%;
+   transform: translateY(-50%);  /* Centra verticalmente */
+   width: 460px;
+   padding: 20px;
+   background-color: $colorfondocajas;
+   border: 2px solid $colorborde;
+   text-align: center;
+   line-height: 30px;
+   border-radius: 8px;
+ }
+
+ .skincare-tips{
+  width: 48%; 
+ }
+
+ .texto-skincare-tips{
+   @include flexnowrap;
+   position: absolute;
+   right: 22%;
+   top: 50%;
+   transform: translateY(-50%);  /* Centra verticalmente */
+   width: 460px;
+   padding: 20px;
+   background-color:$colorfondocajas;
+   border: 2px solid $colorborde;
+   text-align: center;
+   line-height: 30px;
+   border-radius: 8px;
+ }
+
+ .contenedor-skinacre-tips{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin-bottom:20px ;
+  padding: 30px;
+ }
+
+
+ /* pagina CONTACTO */
+
+.titulo-contacto{
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-contacto{
+   display: flex;
+   justify-content: center;
+   gap: 70px;
+   width: 100%;
+   height: 400px;
+ }
+
+.nombreyapellido-contacto{
+   @include flexbetween;
+  }
+
+  .email-contacto{
+   @include flexbetween;
+  }
+
+  .mensaje-contacto{
+   @include flexbetween;
+  }
+
+
+.boton-contacto{
+   margin-left: 40%; 
+ 
+ }
