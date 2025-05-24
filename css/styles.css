@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Tienne:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marmelad&family=Tienne:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marmelad&family=Rasa:ital,wght@0,300..700;1,300..700&family=Tienne:wght@400;700;900&display=swap");
 /* encabezado-menu de navergacion- h1- h2-main */
 .header-encabezado {
   background-color: rgb(228, 205, 244);
@@ -8,20 +11,24 @@
 
 li {
   display: inline;
-  padding: 40px;
+  padding: 20px;
 }
 
 .titulo-header {
-  font-size: 40px;
+  font-size: 60px;
   gap: 200px;
+}
+
+.navbar {
+  flex-grow: 0;
 }
 
 .nav-a:hover {
   color: blueviolet;
 }
 
-p {
-  font-size: 16px;
+.nav-a {
+  font-size: 20px;
 }
 
 /*  footer*/
@@ -60,7 +67,7 @@ footer {
 
 .botondefooter {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   width: 100%;
 }
@@ -78,7 +85,25 @@ html, body {
 
 main {
   background-color: beige;
-  margin-top: 30px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+.main-img {
+  background-image: url(/assets/img/imagendefondo.jpg);
+}
+
+h1 {
+  font-family: "Tienne", serif;
+}
+
+.tipografia2 {
+  font-family: "Marmelad", sans-serif;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Rasa", serif;
 }
 
 /* pagina de inicio */
@@ -112,7 +137,9 @@ main {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 80%;
+  position: relative;
+  left: 15%;
+  width: 90%;
   max-width: 950px;
   padding: 20px;
   background-color: rgb(244, 240, 236);
@@ -140,7 +167,7 @@ main {
   max-width: 80px;
 }
 
-button {
+.button {
   background-color: rgb(122, 14, 223);
   color: white;
   border-radius: 8px;
@@ -303,6 +330,13 @@ button {
   padding: 20px;
 }
 
+.catherin-img {
+  border-radius: 8px;
+  display: flex;
+  position: relative;
+  right: 15%;
+}
+
 .conocemeimg {
   flex: 1;
   min-width: 300px;
@@ -319,6 +353,8 @@ button {
   flex: 1;
   min-width: 300px;
   align-items: center;
+  position: relative;
+  right: 8%;
   background-color: rgb(244, 240, 236);
   border: 2px solid rgb(122, 14, 223);
   line-height: 30px;
@@ -348,7 +384,7 @@ button {
   line-height: 30px;
   padding: 20px;
   margin: 30px auto;
-  width: 90%;
+  width: 80%;
   border-radius: 8px;
 }
 
@@ -368,7 +404,7 @@ button {
   background-color: rgb(244, 240, 236);
   border: 2px solid rgb(122, 14, 223);
   line-height: 30px;
-  padding: 20px;
+  padding: 50px;
   margin: 30px auto;
   width: 80%;
   border-radius: 8px;
@@ -376,7 +412,7 @@ button {
 
 .seccion-contenido,
 .seccion-curiosidades {
-  padding: 100px;
+  padding: 20%;
 }
 
 /* pagina Vlog */
@@ -582,6 +618,17 @@ button {
 }
 
 /* pagina TIPS */
+.img-tips {
+  border-radius: 8px;
+}
+
+.img-tips-skincare {
+  border-radius: 8px;
+  display: flex;
+  position: relative;
+  right: 15%;
+}
+
 .titulo-tips {
   height: 200px;
   display: flex;
@@ -696,6 +743,7 @@ button {
 .titulo-contacto {
   display: flex;
   justify-content: center;
+  padding: 40px;
 }
 
 .contenedor-contacto {
@@ -728,7 +776,7 @@ button {
 }
 
 .boton-contacto {
-  margin-left: 40%;
+  margin-top: 20px;
 }
 
 @media (max-width: 768px) {
@@ -738,6 +786,9 @@ button {
     width: 100%;
     height: auto;
     min-height: 400px;
+  }
+  .titulo-header {
+    font-size: 40px;
   }
   .video-bienvenida-inicio {
     padding: 15px;
@@ -806,11 +857,15 @@ button {
   .contenedor-conoceme {
     flex-direction: column;
   }
+  .catherin-img {
+    right: 0;
+  }
   .conocemeimg {
     justify-content: center;
   }
   .sobremi-text-conoceme {
     width: 100%;
+    right: 0;
   }
   .contenido-text-conoceme,
   .curiosidades-text-conoceme {
@@ -848,11 +903,14 @@ button {
   .skincare-tips {
     width: 100%;
   }
+  .img-tips-skincare {
+    right: 30px;
+  }
   .texto-skincare-tips {
     position: relative;
     width: 90%;
     margin-top: -50px;
-    right: 0;
+    right: 20px;
     top: auto;
     transform: none;
   }

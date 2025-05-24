@@ -8,7 +8,9 @@
   min-height: 400px;
 
 }
-
+.titulo-header{
+   font-size: 40px;
+}
 .video-bienvenida-inicio {
   padding: 15px;
 }
@@ -87,13 +89,16 @@
     .contenedor-conoceme {
       flex-direction: column;
   }
-  
+  .catherin-img{
+    right: 0;
+  }
   .conocemeimg {
       justify-content: center;
   }
   
   .sobremi-text-conoceme {
       width: 100%;
+      right: 0;
   }
   
   .contenido-text-conoceme,
@@ -125,6 +130,7 @@
     .maquillaje-tips{
       width: 100%;
     }
+    
     .texto-maquillaje-tips{
       position: relative;
       width: 90%;
@@ -137,11 +143,15 @@
     width: 100%;
   }
 
+.img-tips-skincare{
+  right: 30px;
+ 
+} 
   .texto-skincare-tips{
     position: relative;
     width: 90%;
     margin-top: -50px;
-    right: 0;
+    right: 20px;
     top: auto;
     transform: none;
   }
