@@ -75,15 +75,15 @@ p{
  
 .suscribirse-inicio{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  position: relative; 
-  left: 40%;
+  margin: 0 auto;
   width: 100%; 
   max-width: 400px;
   height: auto; /* Cambiado de 200px a auto */
   padding: 20px;
-  flex-wrap: wrap; /* Permitir que los elementos se ajusten */
+ 
 }
 
 .usuario-inicio{
