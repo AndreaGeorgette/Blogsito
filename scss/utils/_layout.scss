@@ -2,36 +2,40 @@
  @use "../utils/mixin" as *;
  @use "../utils/variables" as *;
  
- /* encabezado-menu de navergacion- h1- h2-main */
-  .header-encabezado{
-   background-color: $colorfondomyf;
-   padding: 30px;
-   border: 2px solid $colorborde;
-   
- }
 
 
- li{
-   display: inline;
-   padding: 40px;
- }
+/* encabezado-menu de navergacion- h1- h2-main */
+.header-encabezado{
+  background-color: $colorfondomyf;
+  padding: 30px;
+  border: 2px solid $colorborde;
+}
 
- .titulo-header{
-  font-size: 40px;
+
+li{
+  display: inline;
+  padding: 20px;
+}
+
+.titulo-header{
+  font-size: 60px;
   gap: 200px;
- }
+}
 
- .nav-a:hover {
-   color: blueviolet;
- }
+.navbar{
+  flex-grow: 0;
+}
+.nav-a:hover {
+  color: blueviolet;
+}
+
+.nav-a{
+ font-size: 20px;
+}
  
- p{
-  font-size: 16px;
- }
-
 
  
- /*  footer*/
+/*  footer*/
 
 footer {
   background-color: $colorfondomyf;
@@ -40,7 +44,6 @@ footer {
   display: flex;
   margin: 10px 0;
   width: 100%;
- 
 }
 
 .footer-container {
@@ -67,7 +70,7 @@ footer {
 
 .botondefooter {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   width: 100%;
 }

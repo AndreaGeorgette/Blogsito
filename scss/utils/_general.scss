@@ -7,40 +7,63 @@ html, body {
   position: relative;
 }
 
-  main{
-   background-color: beige;
-    margin-top: 30px;
+/* Tipografia y fondos*/
+main{
+  background-color: rgba(249,241,238,255);
+  margin-top: 10px;
+ padding-bottom: 20px;
+}
+.main-img{
+ background-image: url(/assets/img/fondo\ \ .jpg); 
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+}
 
-  }
+h1{
+  font-family:  "Tienne", serif;
+}
+
+.tipografia2{
+  font-family: "Marmelad", sans-serif;;
+}
+
+p{
+  font-size: 20px;
+  font-family: "Rasa", serif;
+}
+
  
-   /* pagina de inicio */
+/* pagina de inicio */
  
-   .bienvenida-seccion {
-     @include flexalingitems;
-      width: 100%;
-    }
+.bienvenida-seccion {
+  @include flexalingitems;
+  width: 100%;
+}
 
-  .video-bienvenida-inicio{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: beige;
-    padding: 20px 0;
-    max-width: 100%;
-    
-  }
-  .video-principal{
-    width: 100%;
-    aspect-ratio: 16/9;
-    height: 500px;
-    max-width: 100%;
-    min-width: auto;
-    border-radius: 8px;
-  }
+.video-bienvenida-inicio{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
+  max-width: 100%;
+}
 
-  .texto-bienvenida-inicio{
+.video-principal{
+  width: 100%;
+  aspect-ratio: 16/9;
+  height: 500px;
+  max-width: 100%;
+  min-width: auto;
+  border-radius: 8px;
+}
+
+.texto-bienvenida-inicio{
    @include flexcolumncenter;
-   width: 80%;
+   position: relative;
+   left: 20%;
+   width: 90%;
    max-width: 950px;
    padding: 20px;
    background-color:$colorfondocajas;
@@ -48,76 +71,78 @@ html, body {
    line-height: 30px;
    margin-top: 20px;
    border-radius: 8px;
-    
-  }
+}
  
-  .suscribirse-inicio{
+.suscribirse-inicio{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-left: 0; 
+  margin: 0 auto;
   width: 100%; 
   max-width: 400px;
-  margin: 0 auto; /* Centrar el contenedor */
   height: auto; /* Cambiado de 200px a auto */
   padding: 20px;
-  flex-wrap: wrap; /* Permitir que los elementos se ajusten */
-  }
+ 
+}
 
- .usuario-inicio{
+.usuario-inicio{
+  display: flex;
+  justify-content: end;
    margin: auto;
    max-width: 80px;
- }
+}
 
-  button{
-    background-color: $colorborde;
-    color: white;
-    border-radius: 8px;
-    padding: 8px 16px;
-    cursor: pointer;
- }
+.button{
+  background-color: $colorborde;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 16px;
+ cursor: pointer;
+}
 
   
-  .playlist-titulo-inicio{
+.playlist-titulo-inicio{
    display: flex;
    justify-content: center;
    align-items: flex-end;
    margin-top: 30px;
-  }
+}
 
-  .playlist-seccion{
-   @include flexalingitems;
-    padding: 20px 0;
-    background-color: $colorfondomyf;
-    border: 2px solid $colorborde;
-    margin-bottom: 100px;
-    margin-top: 100px;
- }
+.playlist-seccion{
+  @include flexalingitems;
+  padding: 20px 0;
+  background-color: $colorfondomyf;
+  border: 2px solid $colorborde;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
 
- .spotify-inicio{
+.spotify-inicio{
    width: 100%;
    display: flex;
    justify-content: center;
+}
 
-  }
- .iframe-spotify{
+.iframe-spotify{
    width: 30%;
    height: 100px;
-  }
+}
 
-  .Conocemisvlogs-inicio{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 120px;
+.Conocemisvlogs-inicio{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  margin-top: 120px;
+}
 
-  }
-  .videos-vlog-inicio{
-    max-width: 760px; /* Mantiene el ancho original */
-    height: 415px; /* Mantiene la altura original */
-    aspect-ratio: 16/9; /* Mantiene la proporción del video */
-    border-radius: 8px;
-  }
+.videos-vlog-inicio{
+  max-width: 760px; /* Mantiene el ancho original */
+  height: 415px; /* Mantiene la altura original */
+  aspect-ratio: 16/9; /* Mantiene la proporción del video */
+  border-radius: 8px;
+}
+
 .section-vlog-inicio{
   position: relative;
   margin-top: 20px;
@@ -125,43 +150,18 @@ html, body {
   padding: 20px;
   width: 100%;
 }
-  .video-midia-inicio{
-    display: flex;
-    width: 100%; 
-    max-width: 760px;
-    position: relative;
-    z-index: 1;
-    margin-left: 5%;
-    margin-top: 30px;
-  }
 
- .midia-text-inicio{
-   @include flexcolumncenter;
-   width: 560px;
-   height: auto;
-   min-height: 300px;
-   padding: 30px;
-   background-color: $colorfondocajas;
-   border: 2px solid $colorborde;
-   line-height: 30px;
-   position: absolute;
-    z-index: 2;
-   top: 140px; 
-   right: 11%;
-   border-radius: 8px; 
- }
-
- .video-viajes-inicio{
-   display: flex;
-   width: 100%; 
+.video-midia-inicio{
+  display: flex;
+  width: 100%; 
   max-width: 760px;
-   position: relative;
-   z-index: 1;
-   margin-left: 5%;
-   margin-top: 30px;
- }
+  position: relative;
+  z-index: 1;
+  margin-left: 5%;
+  margin-top: 30px;
+}
 
- .misviajes-inicio{
+.midia-text-inicio{
    @include flexcolumncenter;
    width: 560px;
    height: auto;
@@ -174,18 +174,10 @@ html, body {
    z-index: 2;
    top: 140px; 
    right: 11%;
-   border-radius: 8px;
- }
+   border-radius: 8px; 
+}
 
- .section-familia-inicio{
-   position: relative;
-   margin-top: 80px;
-   padding: 50px;
-   width: 100%;
- }
-
-
- .video-familia-inicio{
+.video-viajes-inicio{
    display: flex;
    width: 100%; 
    max-width: 760px;
@@ -193,9 +185,43 @@ html, body {
    z-index: 1;
    margin-left: 5%;
    margin-top: 30px;
- }
+}
 
- .familiayamigos-inicio{
+.misviajes-inicio{
+   @include flexcolumncenter;
+   width: 560px;
+   height: auto;
+   min-height: 300px;
+   padding: 30px;
+   background-color: $colorfondocajas;
+   border: 2px solid $colorborde;
+   line-height: 30px;
+   position: absolute;
+   z-index: 2;
+   top: 140px; 
+   right: 11%;
+   border-radius: 8px;
+}
+
+.section-familia-inicio{
+   position: relative;
+   margin-top: 80px;
+   padding: 50px;
+   width: 100%;
+}
+
+
+.video-familia-inicio{
+   display: flex;
+   width: 100%; 
+   max-width: 760px;
+   position: relative;
+   z-index: 1;
+   margin-left: 5%;
+   margin-top: 30px;
+}
+
+.familiayamigos-inicio{
    @include flexcolumncenter;
    width: 560px;
    height: auto;
@@ -209,9 +235,11 @@ html, body {
    top: 140px; 
    right: 11%;
    border-radius: 8px;
- }
+}
+
  
- /* Pagina CONOCEME */
+/* Pagina CONOCEME */
+
 .contenedor-conoceme{
    display: flex;
    flex-direction: row;
@@ -219,42 +247,50 @@ html, body {
    gap: 20px;
    position: relative;
    padding: 20px;
+}
 
-  }
+.catherin-img{
+  border-radius: 8px;
+  display: flex;
+  position: relative;
+  right: 15%;
+}
 
- .conocemeimg{
-    flex: 1;
-    min-width: 300px;
-    display: flex;
-    justify-content: flex-end;
-    border-radius: 8px;
-   
-  }
- .sobremi-text-conoceme{
+.conocemeimg{
+ flex: 1;
+ min-width: 300px;
+ display: flex;
+ justify-content: flex-end;
+ border-radius: 8px; 
+}
+
+.sobremi-text-conoceme{
    @include flexcolumncenter;
    flex: 1;
    min-width: 300px;
    align-items: center;
+   position: relative;
+   right: 8%;
    background-color: $colorfondocajas;
    border: 2px solid $colorborde;
    line-height: 30px;
    padding: 20px;
    border-radius: 8px;
-  }
+}
 
- .mi-linea{
-    border: 1px solid  rgb(48, 3, 41);
-    width: 70%;
-    margin: 10px auto;
-  }
+.mi-linea{
+ border: 1px solid  rgb(48, 3, 41);
+ width: 70%;
+ margin: 10px auto;
+}
 
- .emoticon-conoceme{
+.emoticon-conoceme{
    display: flex;
    justify-content: center;
    margin: 10px 0;
- }
+}
 
- .contenido-text-conoceme{
+.contenido-text-conoceme{
    display: flex;
    justify-content: center;
    align-items: center;
@@ -264,49 +300,49 @@ html, body {
    line-height: 30px;
    padding: 20px;
    margin: 30px auto;
-   width: 90%;
+   width: 80%;
    border-radius: 8px;
-  }
+}
 
- .titulos-conoceme{
+.titulos-conoceme{
    @include flexalingitems;
    margin-top: 100px;
-  }
+}
 
- .curiosidades-text-conoceme{
+.curiosidades-text-conoceme{
    @include flexcolumncenter;
    align-items: center;
    background-color: $colorfondocajas;
    border: 2px solid $colorborde;
    line-height: 30px;
-   padding: 20px;
+   padding: 50px;
    margin: 30px auto;
    width: 80%;
    border-radius: 8px;
-  }
+}
  
-  .seccion-contenido,
-  .seccion-curiosidades {
-   padding: 100px;
-  }
+.seccion-contenido,
+.seccion-curiosidades {
+   padding: 20%;
+}
 
 
- /* pagina Vlog */
+/* pagina Vlog */
 
- .h2-titulo-vlog{
+.h2-titulo-vlog{
    height: 200px;
    display: flex;
    justify-content: center;
    align-items: center;
    text-align: center;
- }
+}
 
- .mivlog {
+.mivlog {
    display: flex;
    justify-content: center;
    width: 100%;
    margin-bottom: 150px; 
-  }
+}
 
 .mivlog-article {
  @include flexcolumncenter;
@@ -321,6 +357,7 @@ html, body {
   margin-bottom: 20px; /* Espacio entre el video y el título */
   border-radius: 8px; /*  esquinas redondeadas */
 }
+
 .mivlog-h3 {
   margin-bottom: 15px;
 }
@@ -334,37 +371,37 @@ html, body {
   border-radius: 8px;
 }
 
- .titulo-videos-vlog{
+.titulo-videos-vlog{
    @include flexcolumncenter;
    margin-bottom: 10px;
    gap: 15px; /* Espacio entre el título y la imagen */
- }
+}
 
 
- .section-vlog{
+.section-vlog{
    position: relative;
    margin-top: 20px;
    margin-bottom: 100px; /* Espacio entre secciones */
    padding: 20px;
    width: 100%;
-  }
+}
  
- .section-vlog-mudanza{
+.section-vlog-mudanza{
    position: relative;
    margin-top: 80px;
    padding: 50px;
    width: 100%;
-  }
+}
 
- .videos-vlog{
+.videos-vlog{
    width: 100%;
    max-width: 760px; 
    height: 415px; 
    aspect-ratio: 16/9; /* Mantiene la proporción del video */
    border-radius: 8px;
- }
+}
 
- .midiadia-vlog{
+.midiadia-vlog{
    display: flex;
    justify-content: center;
    width: 760px;
@@ -372,10 +409,10 @@ html, body {
    z-index: 1;
    margin-left: 5%;
    margin-top: 30px;
- }
+}
 
 
- .midiadia-text-vlog{
+.midiadia-text-vlog{
    @include flexcolumncenter;
    width: 560px;
    height: auto;
@@ -389,20 +426,20 @@ html, body {
    top: 140px; 
    right: 11%;
    border-radius: 8px;
-  }
+}
 
-  .mis-viajes-vlog{
-    display: flex;
-    justify-content: center;
-    width: 760px;
-    position: relative;
-    z-index: 1;
-    margin-left: auto;
-    margin-right: 5%;
-    margin-top: 60px;
-  }
+.mis-viajes-vlog{
+  display: flex;
+  justify-content: center;
+  width: 760px;
+  position: relative;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: 5%;
+  margin-top: 60px;
+}
 
- .viajes-text-vlog{
+.viajes-text-vlog{
    @include flexcolumncenter;
    width: 560px;
    height: auto;
@@ -416,19 +453,19 @@ html, body {
    top: 140px; 
    left: 9%;
    border-radius: 8px;
-  }
+}
 
-  .familiayamigos-vlog{
-    display: flex;
-    justify-content: center;
-    width: 760px;
-    position: relative;
-    z-index: 1;
-    margin-left: 5%;
-    margin-top: 60px;
-  }
+.familiayamigos-vlog{
+   display: flex;
+   justify-content: center;
+   width: 760px;
+   position: relative;
+   z-index: 1;
+   margin-left: 5%;
+   margin-top: 60px;
+}
 
- .familiayamigos-text-vlog{
+.familiayamigos-text-vlog{
    @include flexcolumncenter;
    width: 560px;
    height: auto;
@@ -442,26 +479,26 @@ html, body {
    top: 140px; 
    right: 11%;
    border-radius: 8px;
-  }
+}
 
-  .mudanza-contenedor-vlog{
-    position: relative;
-    height: auto;
-    min-height: 500px;
- }
+.mudanza-contenedor-vlog{
+   position: relative;
+   height: auto;
+   min-height: 500px;
+}
 
-  .mudanza-vlog{
-    display: flex;
-    justify-content: center;
-    width: 760px;
-    position: relative;
-    z-index: 1;
-    margin-left: auto;
-    margin-right: 5%;
-    margin-top: 60px;
-  }
+.mudanza-vlog{
+   display: flex;
+   justify-content: center;
+   width: 760px;
+   position: relative;
+   z-index: 1;
+   margin-left: auto;
+   margin-right: 5%;
+   margin-top: 60px;
+}
 
- .mudanza-text-vlog{
+.mudanza-text-vlog{
    @include flexcolumncenter;
    width: 560px;
    height: auto;
@@ -475,38 +512,51 @@ html, body {
    top: 60px; 
    left: 5%;
    border-radius: 8px;
-  }
+}
 
 
 
 
- /* pagina TIPS */
+/* pagina TIPS */
 
- .titulo-tips{
+.img-tips{
+  border-radius: 8px;
+}
+
+.img-tips-skincare{
+  border-radius: 8px;
+  display: flex;
+  position: relative;
+  left: 20%;
+}
+
+.titulo-tips{
    height: 200px;
    display: flex;
    justify-content: center;
    align-items: center;
    text-align: center; 
-  }
+}
+
 .seccion-tips{
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
- .contenedor-ensalada{
+
+.contenedor-ensalada{
   display: flex;
   justify-content: center;
   position: relative;
   width: 100%;
   margin-bottom: 80px;
- }
+}
 
- .ensalada-tips{
+.ensalada-tips{
   width: 60%; 
-  }
+}
 
- .texto-ensalda-tips{
+.texto-ensalda-tips{
    @include flexnowrap;
    position: absolute;
    right: 22%;
@@ -516,24 +566,23 @@ html, body {
    padding: 20px;
    background-color:$colorfondocajas;
    border: 2px solid $colorborde;
-    line-height: 30px;
-    border-radius: 8px;
- }
+   line-height: 30px;
+   border-radius: 8px;
+}
 
- .contenedor-maquillaje{
+.contenedor-maquillaje{
   display: flex;
   justify-content: center;
   position: relative;
   width: 100%;
   margin-bottom: 80px;
+}
 
- }
-
- .maquillaje-tips{
+.maquillaje-tips{
  width: 60%; 
-  
- }
- .texto-maquillaje-tips{
+}
+
+.texto-maquillaje-tips{
    @include flexnowrap;
    position: absolute;
    right: 22%;
@@ -546,13 +595,13 @@ html, body {
    text-align: center;
    line-height: 30px;
    border-radius: 8px;
- }
+}
 
- .skincare-tips{
-  width: 48%; 
- }
+.skincare-tips{
+  width: 100%; 
+}
 
- .texto-skincare-tips{
+.texto-skincare-tips{
    @include flexnowrap;
    position: absolute;
    right: 22%;
@@ -565,23 +614,23 @@ html, body {
    text-align: center;
    line-height: 30px;
    border-radius: 8px;
- }
+}
 
- .contenedor-skinacre-tips{
+.contenedor-skinacre-tips{
   display: flex;
   justify-content: center;
   position: relative;
   width: 100%;
-  margin-bottom:20px ;
-  padding: 30px;
- }
+  margin-bottom: 20px ;
+}
 
 
- /* pagina CONTACTO */
+/* pagina CONTACTO */
 
 .titulo-contacto{
   display: flex;
   justify-content: center;
+  padding: 40px;
 }
 
 .contenedor-contacto{
@@ -590,22 +639,21 @@ html, body {
    gap: 70px;
    width: 100%;
    height: 400px;
- }
+}
 
 .nombreyapellido-contacto{
    @include flexbetween;
-  }
+}
 
-  .email-contacto{
+.email-contacto{
    @include flexbetween;
-  }
+}
 
-  .mensaje-contacto{
+.mensaje-contacto{
    @include flexbetween;
-  }
+}
 
 
 .boton-contacto{
-   margin-left: 40%; 
- 
- }
+   margin-top: 20px;
+}
